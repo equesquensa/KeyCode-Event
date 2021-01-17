@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+
+    --yellow-color:  rgb(255, 222, 35);
+    --orange-color: rgb(255, 94, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/keyboard.jpg) no-repeat center center/cover;
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+h1{
+    font-size: 140px;
+    font-family: inherit;
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.key{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(5px);
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255, 0.3));
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    flex-direction: column;
+    margin: 20px 30px;
+    min-width: 150px;
+    position: relative;
+}
+
+.key small{
+    position: absolute;
+    top: -24px;
+    text-align: center;
+    width: 100%;
+    color: var(--orange-color);
+    font-size: 20px;
+}
